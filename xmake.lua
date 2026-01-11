@@ -17,3 +17,7 @@ target("summary")
     set_kind("binary")
     add_deps("test")
     add_files("learn/summary.cpp")
+    add_cxxflags("-Wno-gnu-line-marker")
+    add_syslinks("pthread")
+
+
